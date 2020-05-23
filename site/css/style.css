@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+body{
+  padding: 1rem;
+  padding-top: 0px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  background-color: #fafaff;
+  background-image: url('../Images/Home/body1.jpg') ;
+  width :100%; height:100%;
+  
+}
+
+
+@keyframes movetop{
+  0%{
+      transform: translateY(70px);
+      opacity: 0;
+      }
+  100%{
+       transform: translateY(0px);
+       opacity: 1;
+     }
+}
+
+@keyframes logo-fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.header{
+  height: 110vh;
+  background-image:  url('../Images/Home/military-1589813035237-1605.jpg');
+  background-size: cover;
+  background-position: top;
+  box-shadow: 0 1rem 2rem #0f1a2b;
+  border-radius: 8px;
+}
+
+.header-button{
+  text-align: center;
+  font-size: 150%;
+  background-color:#443131;
+  
+  color: blanchedalmond;
+  padding: 8px;
+  border-radius: 25px;
+  width: 250px;
+  
+  position: relative;
+  top: 50%;
+   left: 41%;
+   z-index: 20;
+   animation-name: movetop;  
+   animation-duration: 3s;
+   animation-timing-function: ease-out;
+   animation-delay: 1s;
+   animation-fill-mode: backwards;
+   cursor: pointer;
+}
+
+.header-button a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: aliceblue;
+  
+  
+  }
+  
+  .header-button a:hover, .header-button a:focus{
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+ 
+  .header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem #0f1a2b;
+  }
+
+  
+.header-logo2{
+  float: right;
+  position: relative;
+  top: -150px;
+ 
+}
+
+.header-logo1,.header-logo2{
+  animation-name: logo-fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+
+
+.quote-text{
+  text-align: center;
+  margin-top: 65px;
+  font-style: italic;
+  font-size: 175%;
+  /*background-image: linear-gradient(to right, rgba(255, 255, 255, 0.952), rgba(29, 37, 34, 1.0)); */
+
+  background-color: mintcream;
+    /* A linear gradient creates a band of colors that progress in a straight line.*/
+  background-clip: text;
+  /*Specify how far the background should extend within an element:*/
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: .2s; 
+  z-index: 30;
+}
+
+.quote-text:hover{
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 1);
+}
+.container{
+  /* background-color: #edd7be; */
+background: linear-gradient(to right,#e6dcd3 0, grey 100%) no-repeat;
+  margin-top: 50px;
+}
+
+/* 
+.title {
+  text-transform: uppercase;
+  margin-top: 40px;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  font-size: 200%;
+} */
+
+
+.gallery {
+  position: relative;
+}
+.gallery-photo {
+    width: 30%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.432);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .1s;
+    border-radius: 6px;
+    margin-left: 15px;
+   
+ }
+
+ .gallery-photo-p1 
+ {
+  left: 0;
+  top: 2rem;
+  z-index: 20;
+ }
+
+
+.gallery-photo-p2
+ {
+      left: 33%;
+      top: 2rem;
+      z-index: 20;
+ }
+ 
+ .gallery-photo-p3 
+ {
+      left: 15%;
+      top: 4rem;
+      z-index: 10; 
+}
+
+
+  .gallery-photo-p4 
+ {
+  left: 52%;
+  top: 4rem;
+ }
+
+
+.gallery-photo-p5
+ {
+      left: 68%;
+      top: 2rem;
+ }
+ 
+ 
+ .gallery-photo:hover
+  {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.897);
+      z-index: 20;
+  }
+
+  .gallery:hover .compo-photo:not(:hover)
+   {
+    transform: scale(0.9);
+   }
+
+
+
+   #title{
+     position: relative;
+     text-transform: uppercase;
+     font-size: 150%;
+     background-color: #2573fa;
+     padding: 8px;
+     margin-top: 10px;
+     top : 25px;
+     left: 15px;
+  
+     }
+    
+     
+  p{
+        padding: 50px;
+        padding-left: 100px;
+       margin: 0px;
+       font-size: 120%;
+       font-style: italic;
+       font-weight: bold;
+       line-height: 1.7;
+       color: #000000;
+       letter-spacing: 0.1rem;
+     }
+
+     /* .btn{
+       
+       text-transform: uppercase;
+       position: relative;
+       height: 40px;
+       top: 25px;
+       left: 5%;
+       opacity: 1;
+       border-radius: 8px;
+       color: mintcream;
+       border: 0px;
+       
+     } */
+
+     .btn-primary{
+      
+      background-color: #0f64db;
+      opacity: 1;
+      padding-bottom: 40px !important;
+      left: 5%;
+     }
+     .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+      background-color: #0f64db !important;
+      font-size: 1.5rem !important;
+      opacity: 1 !important;
+      text-transform: uppercase;
+      position: relative;
+       height: 40px;
+       top: 25px;
+       margin-bottom: 20px;
+      
+  }
+
+     button:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem #0f1a2b;
+     }
+     .main{
+       margin: 60px;
+     }
+
+     #history2{
+       margin-top: 220px;
+     }
+
+
+     #organisation{
+       margin-top: 280px;
+
+     }
+
+     .commandsIAF{
+       position: relative;
+     }
+
+     #map{
+       margin-top: -280px;
+     margin-left: 480px;
+     margin-bottom: 50px;
+     
+     }
+
+      #one{
+        /*western A C */
+       position: relative;
+       top: -280px;
+       left: -360px;
+     }
+ 
+     #two{
+     /* central air command  */
+      position: relative;
+      top: -240px;
+      left: -335px;
+
+    }
+
+    #three{
+      /* EAC */
+      position: relative;
+      top: -230px;
+      left: -190px;
+
+    }
+
+    #four{
+         /* SWAC gujrat */
+      position: relative;
+      top: -375px;
+      left: +535px;
+
+    }
+
+    #five{
+    /* MAC  nagpur */
+      position: relative;
+      top: -330px;
+      left: +610px;
+
+    }
+
+    #six{
+         /* training command bangalore  */
+      position: relative;
+      top: -170px;
+      left: +560px;
+
+    }
+
+    #seven{
+       /* southern command trivendrum */
+      position: relative;
+      top: -110px;
+      left: +510px;
+
+    } 
+  
+
+    .infocommand{
+      /* background-color: #c92846; */
+      text-align: center;
+      vertical-align: middle;
+      background: linear-gradient(to right, rgba(230, 117, 11, 0.7), rgba(201, 40, 70, 0.795));
+      margin-top: 150px;
+      margin-left: 50px;
+      border: 1px solid #c723e8;
+      width: 35%;
+      height: 50%;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.432);
+      font-size: 110%;
+       min-height: 160px;
+     
+      font-style: italic;
+      line-height: 1;
+      letter-spacing: 0.1rem;
+      visibility: hidden;
+    }
+
+    
